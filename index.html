@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
 </head>
 <body>
     <div class="discount-banner" id="discountBanner" style="display:none;">
@@ -20,8 +21,8 @@
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <span class="logo-badge" aria-hidden="true">👜</span>
-                <span id="logoText" class="logo-text">Classic Store | كلاسيك ستور</span>
+                <img src="logo.png" alt="Classic Store" class="logo-img" id="logoImg">
+                <span id="logoText" class="logo-text">Classic Store</span>
             </a>
             <div class="nav-search">
                 <input type="text" id="navSearchInput" placeholder="ابحثي عن منتج..." autocomplete="off">
@@ -52,9 +53,9 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="hero-logo">
-                <span class="hero-logo-badge" aria-hidden="true">👜</span>
+                <img src="logo.png" id="heroLogo" alt="Classic Store" class="hero-logo-img">
             </div>
-            <h1 id="heroTitle">Classic Store | كلاسيك ستور</h1>
+            <h1 id="heroTitle" style="display:none;">Classic Store | كلاسيك ستور</h1>
             <p class="hero-subtitle" id="heroSubtitle">حقائب وإكسسوارات ماستر كوبي بأعلى جودة</p>
             <p class="hero-tagline">لمسة فخامة يومية مع توصيل إلى الضفة والقدس والداخل</p>
             <a href="#products" class="btn-primary">تسوقي الآن</a>

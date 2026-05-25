@@ -88,13 +88,14 @@ body.has-banner .hero { margin-top: 40px; }
     text-decoration: none;
 }
 
-.logo-badge {
+.logo-badge, .logo-img {
     width: 42px;
     height: 42px;
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    object-fit: contain;
     background: linear-gradient(135deg, var(--primary), var(--primary-dark));
     color: #111;
     font-size: 1.35rem;
@@ -172,7 +173,7 @@ body.has-banner .mobile-menu { top: 102px; }
     justify-content: center;
     text-align: center;
     position: relative;
-    background: radial-gradient(circle at top, rgba(212,175,55,0.22), transparent 35%), linear-gradient(135deg, #050505 0%, #181818 48%, #2b2416 100%);
+    background: url('hero-bg.png') center center / cover no-repeat;
     padding-top: 80px;
 }
 
@@ -180,7 +181,7 @@ body.has-banner .mobile-menu { top: 102px; }
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(255, 255, 255, 0.45);
 }
 
 .hero-overlay {
@@ -195,17 +196,18 @@ body.has-banner .mobile-menu { top: 102px; }
     padding: 20px;
 }
 
-.hero-logo-badge {
+.hero-logo-badge, .hero-logo-img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    object-fit: contain;
     border: 4px solid rgba(255,255,255,0.85);
     box-shadow: 0 5px 30px rgba(0,0,0,0.35);
     margin-bottom: 20px;
-    background: radial-gradient(circle at 30% 30%, #f7e7a9, #d4af37 55%, #8a6b17 100%);
+    background: white;
     color: #111;
     font-size: 4rem;
 }
